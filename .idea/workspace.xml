@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b4dda56-402c-4250-86e9-df01789ad041" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/binlog.000006" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/binlog.000006" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/AdministrativoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/AdministrativoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/DocenteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/DocenteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Db/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Db/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Administrativo/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Administrativo/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Docente/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Docente/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Docente/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Docente/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Layouts/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Layouts/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bootstrap/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/conection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TWIrRi1xkm3SlHPjZ8OsEUsVLX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/MisAplicacionesPHP/ProyectoUnit/SolicitudBeca" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Views/Docente" />
+      <recent name="$PROJECT_DIR$/app/Views/Home" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b4dda56-402c-4250-86e9-df01789ad041" name="Default Changelist" comment="" />
+      <created>1573569622390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573569622390</updated>
+      <workItem from="1573569623588" duration="17000000" />
+      <workItem from="1573670015582" duration="6568000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
