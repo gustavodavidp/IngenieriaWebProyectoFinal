@@ -1,0 +1,60 @@
+header{
+    margin: 0%;
+}
+.fisc{
+    height: 200px;
+    width: 200px;
+    padding: 2%;
+}
+.utp{
+    height: 200px;
+    width: 350px;
+    left: -3cm;
+    position: relative;
+}
+.titulo{
+    position: relative;
+    left: 40%;
+    bottom: 150px;
+}
+.barra-nav{
+    position: relative;
+    bottom: 60px;
+}
+.sareda{
+    text-align: center;
+}
+.foto{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 32%;
+    top: 30px;
+}
+.texto{
+    margin-left: 40%;
+    margin-right: 100%;
+    display: block;
+    top: 100px;
+    position: relative;
+}
+.Solicitud{
+    display: block;
+    list-style: none;
+}
+.lego{
+    float: left;
+    left: 370px;
+    position: relative;
+}
+.Imalaya{
+    float: left;
+}
+.touken{
+    float: left;
+}
+.foto2{
+    float: left;
+    height: 150px;
+    width: 150px;
+}

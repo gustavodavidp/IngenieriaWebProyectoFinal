@@ -9,7 +9,7 @@ services:
         restart: unless-stopped
         environment:
           - MYSQL_ROOT_PASSWORD=clave123
-          - MYSQL_DATABASE=mi_db
+          - MYSQL_DATABASE=SecretariaAdministrativa
         ports:
           - "8083:3306"
   website:

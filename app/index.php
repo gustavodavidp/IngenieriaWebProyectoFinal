@@ -10,4 +10,5 @@ if (isset($_GET['controller']) && isset($_GET['action'])) { // Si hay un control
     $action = 'index';
 }
 require_once('Views/Layouts/layout.php'); //Se incluye lo que hay en la vista layout.php
+require_once('Views/Home/Inicio.php');
 ?>
