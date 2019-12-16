@@ -13,60 +13,44 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="../../assets/stylesheets/bontio.css">
-    
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <title>Inspeccion Final</title>
 </head>
-    <body>
-        <div class="container">
-            <center><h2>Inspeccion Final</h2>
-            <form class="form-inline" action="/action_page.php">
-                <ul class="Solicitud">
-                    <li class="lego"><label for="email"># de Solicitud:</label></li>
-                    <li class="lego"><input type="email" class="form-control" id="email" placeholder="Ingresar Solicitud" name="email"></form></li><br>
-                    <li class="legoo"><label for="email">Trabajo realizado por:</label></li>
-                    <li class="legoo"><input type="email" class="form-control" id="email" placeholder="Ingresar Nombre" name="email"></form></li>
-                </ul>
-                <label class="imalaya3"  for="start">Fecha:</label>
 
-                <input type="date" id="start" name="trip-start"
-                       value="2018-07-22"
-                       min="2018-01-01" max="2999-12-31">
-                </label>
-             
-                        
-                        
-                        <div class="form-group">
-                                <label for="comment" class="Imalaya">Observaciones:</label>
-                                <textarea class="imalaya2" rows="3" id="comment"></textarea>
-                        </div>
-                      </div>
-                      
-              </div>
-              <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3"><center><button type="submit" class="btn btn-primary">Regresar</button></center></div>
-                    <div class="col-sm-3"><center><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Enviar</button></center></div>
-                    <div class="col-sm-3"></div>
-                  </div>
-              
-            </form>
-          </div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
-          <p>Solicitud actualizada correctamente.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
-        </div>
-      </div>
-    </div>
-        
-    </body>
-</html>
+<div class="container">
+
+<center><h2>Inspección Final</h2></center>
+
+<div class="form-group">
+  <label for="usr"># De Solicitud :</label>
+  <input type="text" class="form-control" id="usr">
+
+</div>
+<div class="form-group">
+  <label for="usr">Trabajo Realizado por:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+  
+  
+  <label for="usr">Fecha:</label>
+   <input id="datepicker" width="270" />
+    <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
+    </script>
+    <br>
+    
+    <div class="form-group">
+  <label for="comment">Observaciones:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+
+   <br>
+   <br>
+   <br>
+   <center> <button type="submit" class="btn btn-primary">Regresar</button>         <button type="button" class="btn btn-primary">Enviar</button></center>
+</div>
+

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
  $host_db = "mysql";
  $user_db = "root";
  $pass_db = "clave123";
@@ -42,8 +42,7 @@ $Nom_Usuario=$_POST['Nombre_Usuario'];
  $query = "INSERT INTO Usuario_Temporal (`Nombre Completo`, Nombre_Usuario, Correo_Ins, Contrasea , Cedula, Departamento, Facultad, Cargo )
            VALUES ('$Nom_Completo', '$Nom_Usuario','$Correo_Ins','$Contraseña','$Cedula', '$Departamento','$Facultad', '$Cargo' )";
 
-$query = "INSERT INTO Usuario (Nom_Usuario, Nombre_Usuario, Correo_Ins, Contrasea , Cedula, Departamento, Facultad, Cargo )
-VALUES ('$Nom_Completo', '$Nom_Usuario','$Correo_Ins','$Contraseña','$Cedula', '$Departamento','$Facultad', '$Cargo' )";
+$query2 = "INSERT INTO Usuario (Nom_Usuario,Contrasea,Usuario_Temporal_ID_UST) SELECT Correo_Ins,Contrasea, ID_UST FROM Usuario_Temporal ";
  if ($conexion->query($query) === TRUE) {
     header("location:../Views/Home/index.php");
  echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
@@ -54,6 +53,12 @@ VALUES ('$Nom_Completo', '$Nom_Usuario','$Correo_Ins','$Contraseña','$Cedula', 
  else {
  echo "Error al crear el usuario." . $query . "<br>" . $conexion->error; 
    }
+ }
+ if ($conexion->query($query2) === TRUE) {
+    header("location:../Views/Home/index.php");
+ echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
+ echo "<h4>" . "Bienvenido: " . $_POST['Nombre_Completo'] . "</h4>" . "\n\n";
+ echo "<h5>" . "Hacer Login: " . "<a href='login.html'>Login</a>" . "</h5>"; 
  }
  mysqli_close($conexion);
 ?>

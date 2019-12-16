@@ -1,22 +1,22 @@
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   	<div class="img" >
-		<h2><img style="display: inline-block" src="assets/images/logo_utp.png" alt="Logo" width="115" height="115">Universidad Tecnológica de Panamá</h2>
+		<h2><img style="display: inline-block" src="../../assets/images/logo_utp.png" alt="Logo" width="115" height="115">Universidad Tecnológica de Panamá</h2>
 	</a>
 	</div>
 </div>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
 
-	<a class="navbar-brand" href="index.php">Inicio</a>
+	<a class="navbar-brand" href="../../index.php">Inicio</a>
 
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="Solicituddereporte.php">Nosotros</a>
+      <a class="nav-link" href="../Views/Layouts/Nosotros.php">Nosotros</a>
     </li>
     
     
 	<li class="nav-item">
-      <a class="nav-link" href="#">Ayuda</a>
+      <a class="nav-link" href="../Layouts/FAQ.php">Ayuda</a>
 	</li>
 	
   </ul>

@@ -18,21 +18,20 @@
 <form  class="was-validated" method="POST" action="../../Controllers/LogoutController.php">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
 
-	<a class="navbar-brand" href="index.php">Inicio</a>
+	<a class="navbar-brand" href="../../Views/Home/index.php">Inicio</a>
 
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="Solicituddereporte.php">Ingresar Solicitud</a>
+      <a class="nav-link" href="../../Views/Home/Solicituddereporte.php">Ingresar Solicitud</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="ConsultarSolicitud.php">Consultar Solicitud</a>
+      <a class="nav-link" href="../Ayuda/Nosotros.php">Nosotros</a>
 	</li>
+	
 	<li class="nav-item">
-      <a class="nav-link" href="#">Generar informe</a>
+      <a class="nav-link" href="../Ayuda/FAQ.php">Ayuda</a>
 	</li>
-	<li class="nav-item">
-      <a class="nav-link" href="#">Ayuda</a>
-	</li>
+	
 	
   </ul>
   <ul class="navbar-nav ml-auto">
