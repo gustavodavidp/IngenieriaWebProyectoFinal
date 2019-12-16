@@ -83,6 +83,102 @@
         </div>
     </body>
     <footer>
+    <body> 
+  
 
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-4">
+  
+  <h2 class="mt-2">Solicitudes de Reporte</h2>
+  <div class="table-responsive">
+      <table class="table table-striped table-sm table-hover">
+          <thead>
+              <tr>
+                  <th>Elegir</th>
+                  <th>Numero de Solicitud</th>
+                  <th>Tipo de Solicitud</th>
+                  <th>Edificio</th>
+                  <th>Descripción</th>
+                  <th>Fecha</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+                  <tr>
+                  <td>
+                                
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                      <label class="custom-control-label" for="customCheck"></label>
+                                    </div>
+                                
+                            </td>
+                      <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+  // 2) Preparar la orden SQL
+  $consulta= "SELECT*FROM SolicitudReporte";
+  
+  // 3) Ejecutar la orden y obtener datos
+  $datos= mysqli_query ($conexión,$consulta);
+  
+  // 4) Ir Imprimiendo las filas resultantes
+  while ($fila =mysqli_fetch_array($datos)){
+   echo $fila["idSolicitud"];
+   echo "</p>";
+  } 
+  }?></td>
+                      <td><?php  if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+                        // 2) Preparar la orden SQL
+                        $consulta= "SELECT*FROM SolicitudReporte";
+                        
+                        // 3) Ejecutar la orden y obtener datos
+                        $datos= mysqli_query ($conexión,$consulta);
+                        
+                        // 4) Ir Imprimiendo las filas resultantes
+                        while ($fila =mysqli_fetch_array($datos)){
+                        echo $fila["Tipo_Solicitud"];
+                        echo "</p>";} 
+                        } ?></td>
+                                            <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+                        // 2) Preparar la orden SQL
+                        $consulta= "SELECT*FROM SolicitudReporte";
+                        
+                        // 3) Ejecutar la orden y obtener datos
+                        $datos= mysqli_query ($conexión,$consulta);
+                        
+                        // 4) Ir Imprimiendo las filas resultantes
+                        while ($fila =mysqli_fetch_array($datos)){
+                        echo $fila["Edificio"];
+                        echo "</p>";} 
+                        }  ?></td>
+                      <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+  // 2) Preparar la orden SQL
+  $consulta= "SELECT*FROM SolicitudReporte";
+  
+  // 3) Ejecutar la orden y obtener datos
+  $datos= mysqli_query ($conexión,$consulta);
+  
+  // 4) Ir Imprimiendo las filas resultantes
+  while ($fila =mysqli_fetch_array($datos)){
+   echo $fila["Descripcion"];
+   echo "</p>";} 
+  }  ?></td>
+                      <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+  // 2) Preparar la orden SQL
+  $consulta= "SELECT*FROM SolicitudReporte";
+  
+  // 3) Ejecutar la orden y obtener datos
+  $datos= mysqli_query ($conexión,$consulta);
+  
+  // 4) Ir Imprimiendo las filas resultantes
+  while ($fila =mysqli_fetch_array($datos)){
+   echo $fila["Fecha"];
+   echo "</p>";} 
+  }   ?></td>
+                  </tr>
+             
+          </tbody>
+      </table>
+  </div>
+  </main>
+   
+  </body> 
     </footer>
-</html>

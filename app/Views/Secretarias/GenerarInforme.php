@@ -16,7 +16,7 @@
 </head>
 <body>
 
-
+<form  class="was-validated" method="POST" action="../../Controllers/InformeController.php">
     <div class="container">
     
     
@@ -24,14 +24,14 @@
     
       <label class="imalaya3"  for="start">Fecha:</label>
     
-      <input type="date" id="start" name="trip-start"
+      <input type="date" id="start" name="Fecha"
              value="2018-07-22"
              min="2018-01-01" max="2999-12-31">
       </label>
       
       <div class="form-group">
       <label for="sel1">Tipo de Informe :</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" id="sel1" name="TipoInforme">
     
         <option>Seleccione Uno</option>
         <option>Solicitudes Aprobadas</option>
@@ -45,7 +45,7 @@
       <br>
       <div class="form-group">
       <label for="sel1">Fomato:</label>
-      <select class="form-control" id="sel1">
+      <select class="form-control" id="sel1" name="Formato">
     
         <option>Seleccione Uno</option>
         <option>Word</option>
@@ -56,9 +56,99 @@
        <br>
        <br>
        <br>
-       <center> <button type="submit" class="btn btn-primary">Limpiar</button>      <button type="button" class="btn btn-primary">Vista Previa</button>   <button type="button" class="btn btn-primary">Generar</button></center>
-      </form>
+       <center>   <button type="submit" class="btn btn-primary">Generar</button></center>
+      
     </div>
+    <body> 
+  
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-4">
+
+<h2 class="mt-2">Solicitudes de Reporte</h2>
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-hover">
+        <thead>
+            <tr>
+                <th>Numero de Solicitud</th>
+                <th>Tipo de Solicitud</th>
+                <th>Edificio</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["idSolicitud"];
+ echo "</p>";
+} 
+}?></td>
+                    <td><?php  if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Tipo_Solicitud"];
+ echo "</p>";} 
+} ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Edificio"];
+ echo "</p>";} 
+}  ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Descripcion"];
+ echo "</p>";} 
+}  ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Fecha"];
+ echo "</p>";} 
+}   ?></td>
+                </tr>
+           
+        </tbody>
+    </table>
+</div>
+</main>
+ 
+</body> 
     
     </body>
+    </form>
     </html>
