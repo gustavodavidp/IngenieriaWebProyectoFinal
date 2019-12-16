@@ -1,20 +1,26 @@
 <?php
 include 'conexion.php';
-class consul {
+class SolicitudModel {
     
     private $lista;
     
-    public function _construct(){
-        $this->lista=array();
-    }
+        private $db;
+        private $docentes;
+     
+        public function __construct(){
+            $this->db = conexion::con();
+            $this->docentes = array();
+        }
+        public function listar(){
+            $idSolicitud=$_POST["numero"];
+            $consulta = $this->db->query("select * from SolicitudReporte where idSolicitud = '$idSolicitud';");
+            while($filas = $consulta->fetch_assoc()){
+                $this->docentes[] = $filas;
+            }
+            return $this->docentes;
+        }
     
-    public function Consultar($idUsuario, $Fecha, $Tipo_Dano){
-      $query=mysqli_query(conexion::con(), "call consultar('$idSolicitud','$Fecha', '$Tipo_Dano')");
-      while ($row=mysqli_fetch_array($query)){
-          $this->lista[]=$row;
-      }
-      return $this->lista;
-    }
+    
     
     
 }

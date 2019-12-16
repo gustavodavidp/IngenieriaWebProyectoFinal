@@ -1,8 +1,7 @@
 <?php 
         session_start();
  ?>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,81 +16,93 @@
 		<?php require_once('navbar.php'); ?>
 </header>
 
-    <body>
-        <div class="container">
-            <div class = "row">
-                <div class = "col">
-                    <center><h2>Consultar Solicitud</h2></center>
-                    <br>
-                </div>
-            </div>
-            <div class = "row justify-content-center">
-                <div class = "col-4">
-                    <h4>Número de Solicitud</h4>
-                    <br>
-                </div>
-                <div class = "col-4">
-                <form  class="was-validated" method="POST" action="../../Controllers/ConsultaReporteController.php">
-                        <input type="text" class="form-control" id="text" placeholder="Ingrese numero de solicitud" name="numero">
-                        <br>
-                        <div class = "row">
-                            <div class = "col-12">
-                                <center><button type="submit" class="btn btn-success" value="Send" name="Consultar">Buscar</button></center>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+
+<body> 
+  
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-4">
+
+<h2 class="mt-2">Solicitudes de Reporte</h2>
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-hover">
+        <thead>
+            <tr>
+                <th>Numero de Solicitud</th>
+                <th>Tipo de Solicitud</th>
+                <th>Edificio</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
             
-        </div>
-    </body>
-    <div class ="container">
-            <div class ="row">
-                <div class = "col-12">
-                    
-                    <br>
-                </div>
-            </div>
-            <div class = "row justify-content-center">
-                <div class = "col-12">
-                    <table class="table table-success table-striped">
-                        <thead>
-                          <tr>
-                            <th>Elegir</th>
-                            <div class ="row">
-                            <th># de Solicitud</th>
-                            <?php echo $idSolicitud['numero']; ?>
-                            </div>
-                            <th>Fecha</th>
-                            <th>Tipo de Daño</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                                <form>
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                                      <label class="custom-control-label" for="customCheck"></label>
-                                    </div>
-                                </form>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class = "row justify-content-center">
-                <div class = "col-4">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-                    </ul>
-                </div>
-            </div>
+                <tr>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["idSolicitud"];
+ echo "</p>";
+} 
+}?></td>
+                    <td><?php  if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Tipo_Solicitud"];
+ echo "</p>";} 
+} ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Edificio"];
+ echo "</p>";} 
+}  ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Descripcion"];
+ echo "</p>";} 
+}  ?></td>
+                    <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
+// 2) Preparar la orden SQL
+$consulta= "SELECT*FROM SolicitudReporte";
+
+// 3) Ejecutar la orden y obtener datos
+$datos= mysqli_query ($conexión,$consulta);
+
+// 4) Ir Imprimiendo las filas resultantes
+while ($fila =mysqli_fetch_array($datos)){
+ echo $fila["Fecha"];
+ echo "</p>";} 
+}   ?></td>
+                </tr>
+           
+        </tbody>
+    </table>
+</div>
+</main>
+ 
+</body> 
