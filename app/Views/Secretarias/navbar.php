@@ -27,9 +27,7 @@
 	<li class="nav-item">
       <a class="nav-link" href="../../Views/Secretarias/ConsultarSolicitud.php">Consultar Solicitud</a>
 	</li>
-	<li class="nav-item">
-      <a class="nav-link" href="../../Views/Secretarias/Aprobar.php">Aprobar Solicitud</a>
-	</li>
+	
     <li class="nav-item">
       <a class="nav-link" href="../../Views/Secretarias/GenerarInforme.php">Generar Informe</a>
 	</li>
