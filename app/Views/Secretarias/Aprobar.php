@@ -111,7 +111,7 @@
                                       <label class="custom-control-label" for="customCheck"></label>
                                     </div>
                                 
-                            </td>
+                  </td>
                       <td><?php if ($conexión = mysqli_connect("mysql", "root", "clave123", "SecretariaAdministrativa")){
   // 2) Preparar la orden SQL
   $consulta= "SELECT*FROM SolicitudReporte";
